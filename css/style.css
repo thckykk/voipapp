@@ -1,0 +1,688 @@
+@charset 'UTF-8';
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-size: 100%;
+}
+
+ul
+{
+    list-style: none;
+}
+
+button,
+input,
+select,
+textarea
+{
+    margin: 0;
+}
+
+html
+{
+    box-sizing: border-box;
+}
+
+*,
+:before,
+:after
+{
+    box-sizing: inherit;
+}
+
+embed,
+object,
+audio,
+video
+{
+    max-width: 100%;
+    height: auto;
+}
+
+iframe
+{
+    border: 0;
+}
+
+table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td,
+th
+{
+    padding: 0;
+
+    text-align: left;
+}
+
+html
+{
+    font-size: 62.5%;
+
+    overflow: auto;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+body
+{
+    font-family: YuGothic, 'Yu Gothic', 'ヒラギノ角ゴシック', 'Hiragino Sans', 'メイリオ', Meiryo, sans-serif;
+    font-size: 1.6em;
+    line-height: 1;
+
+    overflow-x: hidden;
+
+    width: 100%;
+
+    word-wrap: break-word;
+
+    -webkit-text-size-adjust: 100%;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6
+{
+    font-weight: normal;
+}
+
+body a
+{
+    text-decoration: none;
+}
+
+body a:hover
+{
+    cursor: pointer;
+}
+
+body img
+{
+    display: block;
+
+    border: none;
+}
+
+input,
+button,
+textarea,
+select
+{
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    border-radius: 0;
+    outline: none;
+    background: none;
+
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+header
+{
+    display: -moz-flex;
+    display:  -ms-flex;
+    display:   -o-flex;
+    display:      flex;
+    display: -ms-flexbox;
+    /*--- IE10 ---*/
+
+    padding: 5pt;
+
+    background-color: #fd5c63;
+    /*IE10*/
+
+        flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    /*--- IE10用 ---*/
+    align-items: center;
+    -ms-flex-align: center;
+    /*--- IE10 ---*/
+    justify-content: center;
+    -ms-flex-pack: center;
+}
+
+header .setting,
+header .add
+{
+    position: relative;
+
+    width: 20pt;
+}
+
+header .setting figure,
+header .add figure
+{
+    display: -moz-flex;
+    display:  -ms-flex;
+    display:   -o-flex;
+    display:      flex;
+    display: -ms-flexbox;
+
+    width: 100%;
+    /*--- IE10 ---*/
+    height: 20pt;
+
+    border-radius: 100%;
+    /*IE10*/
+
+    align-items: center;
+    -ms-flex-align: center;
+    /*--- IE10 ---*/
+    justify-content: center;
+    -ms-flex-pack: center;
+}
+
+header .setting figure i,
+header .add figure i
+{
+    font-size: 16pt;
+
+    color: #fff;
+}
+
+header .setting span,
+header .add span
+{
+    /*--- IE10 ---*/
+    font-size: 6pt;
+
+    position: absolute;
+    top: -2pt;
+    right: -5pt;
+
+    display: -moz-flex;
+    display:  -ms-flex;
+    display:   -o-flex;
+    display:      flex;
+    display: -ms-flexbox;
+
+    width: 12pt;
+    height: 12pt;
+
+    color: #fff;
+    border-radius: 100%;
+    background-color: #f00;
+    /*IE10*/
+
+    justify-content: center;
+    -ms-flex-pack: center;
+    /*--- IE10 ---*/
+    align-items: center;
+    -ms-flex-align: center;
+}
+
+header h1
+{
+    text-align: center;
+
+    color: #fff;
+
+    flex: 1;
+}
+
+#search
+{
+    padding: 10pt 0;
+
+    background-color: #f5f5f5;
+}
+
+#search form
+{
+    padding: 0 5pt;
+}
+
+#search form input
+{
+    font-size: 8pt;
+
+    display: block;
+
+    width: 100%;
+    padding: 8pt;
+
+    border-radius: 100px;
+    background-color: #e3e3e3;
+}
+
+#me
+{
+    display: -moz-flex;
+    display:  -ms-flex;
+    display:   -o-flex;
+    display:      flex;
+    display: -ms-flexbox;
+    /*--- IE10 ---*/
+
+    padding: 10pt 5pt;
+    /*IE10*/
+
+    align-items: center;
+    -ms-flex-align: center;
+}
+
+#me figure
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 50pt;
+    height: 50pt;
+
+    border-radius: 100%;
+}
+
+#me figure img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: auto;
+    height: 100%;
+
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+#me p
+{
+    font-weight: bold;
+
+    padding-left: 10pt;
+}
+
+#me p span
+{
+    font-size: 9pt;
+    font-weight: normal;
+
+    display: block;
+
+    padding-top: 4pt;
+
+    color: #caccd1;
+}
+
+#content
+{
+    padding-bottom: 53pt;
+}
+
+#content h1
+{
+    font-size: 8pt;
+
+    padding: 5pt;
+
+    color: #3b3b3b;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    background-color: #f5f5f5;
+}
+
+#content ul li
+{
+    padding: 5pt;
+
+    border-bottom: 1px solid #f5f5f5;
+}
+
+#content ul li:last-child
+{
+    border-bottom: none;
+}
+
+#content ul li a
+{
+    /*--- IE10用 ---*/
+    position: relative;
+
+    display: -moz-flex;
+    display:  -ms-flex;
+    display:   -o-flex;
+    display:      flex;
+    display: -ms-flexbox;
+
+    color: #3b3b3b;
+    /*IE10*/
+
+    align-items: center;
+    -ms-flex-align: center;
+    /*--- IE10 ---*/
+        flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+#content ul li a figure
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 32pt;
+    height: 32pt;
+    margin-right: 10pt;
+
+    border-radius: 100%;
+}
+
+#content ul li a figure img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: auto;
+    height: 100%;
+
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+#content ul li a p
+{
+    font-size: 11pt;
+}
+
+#content ul li a p span
+{
+    font-size: 8pt;
+
+    display: block;
+
+    padding-top: 2pt;
+
+    color: #caccd1;
+}
+
+#content ul li a i
+{
+    position: absolute;
+    right: 10pt;
+}
+
+footer
+{
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+
+    border-top: 1px solid #e3e3e3;
+    background-color: #f5f5f5;
+}
+
+footer ul
+{
+    display: -moz-flex;
+    display:  -ms-flex;
+    display:   -o-flex;
+    display:      flex;
+    display: -ms-flexbox;
+    /*--- IE10 ---*/
+
+    padding: 8pt 15pt;
+    /*IE10*/
+
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+}
+
+footer ul li a
+{
+    text-align: center;
+
+    color: #3b3b3b;
+}
+
+footer ul li a figure
+{
+    /*--- IE10 ---*/
+    font-size: 16pt;
+
+    display: -moz-flex;
+    display:  -ms-flex;
+    display:   -o-flex;
+    display:      flex;
+    display: -ms-flexbox;
+
+    width: 25pt;
+    height: 20pt;
+    margin: 0 auto;
+
+    color: #caccd1;
+    /*IE10*/
+
+    justify-content: center;
+    -ms-flex-pack: center;
+    /*--- IE10 ---*/
+    align-items: center;
+    -ms-flex-align: center;
+}
+
+footer ul li a p
+{
+    font-size: 8pt;
+
+    padding-top: 3pt;
+}
+
+footer ul li a p span
+{
+    /*--- IE10 ---*/
+    font-size: 6pt;
+
+    position: absolute;
+    top: 4pt;
+    right: 14pt;
+
+    display: -moz-flex;
+    display:  -ms-flex;
+    display:   -o-flex;
+    display:      flex;
+    display: -ms-flexbox;
+
+    width: 12pt;
+    height: 12pt;
+
+    color: #fff;
+    border-radius: 100%;
+    background-color: #f00;
+    /*IE10*/
+
+    justify-content: center;
+    -ms-flex-pack: center;
+    /*--- IE10 ---*/
+    align-items: center;
+    -ms-flex-align: center;
+}
+
+#person
+{
+    padding: 10pt;
+}
+
+#person figure
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 75pt;
+    height: 75pt;
+    margin: 0 auto;
+
+    border-radius: 100%;
+}
+
+#person figure img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: auto;
+    height: 100%;
+
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+#person p
+{
+    /*--- IE10用 ---*/
+    font-size: 16pt;
+
+    display: -moz-flex;
+    display:  -ms-flex;
+    display:   -o-flex;
+    display:      flex;
+    display: -ms-flexbox;
+
+    padding-top: 5pt;
+
+    text-align: center;
+    /*IE10*/
+
+    align-items: center;
+    -ms-flex-align: center;
+    /*--- IE10 ---*/
+    justify-content: center;
+    -ms-flex-pack: center;
+    /*--- IE10 ---*/
+        flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+#person p i
+{
+    font-size: 8pt;
+
+    padding-left: 5pt;
+}
+
+#person p span
+{
+    font-size: 8pt;
+
+    width: 100%;
+    padding-top: 2pt;
+}
+
+#content ol
+{
+    display: -moz-flex;
+    display:  -ms-flex;
+    display:   -o-flex;
+    display:      flex;
+    display: -ms-flexbox;
+
+    padding: 10pt 5pt;
+    /*--- IE10 ---*/
+
+    list-style: none;
+    /*IE10*/
+
+    justify-content: center;
+    -ms-flex-pack: center;
+}
+
+#content ol li:not(:first-child)
+{
+    margin-left: 10pt;
+}
+
+#content ol li a
+{
+    color: #fff;
+}
+
+#content ol li a figure
+{
+    position: relative;
+
+    display: -moz-flex;
+    display:  -ms-flex;
+    display:   -o-flex;
+    display:      flex;
+    display: -ms-flexbox;
+    overflow: hidden;
+
+    width: 30pt;
+    /*--- IE10 ---*/
+    height: 30pt;
+
+    border-radius: 100%;
+    background-color: #caccd1;
+    /*IE10*/
+
+    justify-content: center;
+    -ms-flex-pack: center;
+    /*--- IE10 ---*/
+    align-items: center;
+    -ms-flex-align: center;
+}
+
+#content ol li a .facebook
+{
+    background-color: #3b5998;
+}
+
+#content ol li a .instagram
+{
+    background-color: #833ab4;
+}
+
+#content ol li a .twitter
+{
+    background-color: #1da1f2;
+}
+
+#content ol li a .email
+{
+    background-color: #fd5c63;
+}

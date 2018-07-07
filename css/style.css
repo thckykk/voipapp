@@ -168,7 +168,7 @@ header
     display: -ms-flexbox;
     /*--- IE10 ---*/
 
-    padding: 5pt;
+    padding: 8pt 5pt;
 
     background-color: #fd5c63;
     /*IE10*/
@@ -255,6 +255,8 @@ header .add span
 
 header h1
 {
+    font-weight: bold;
+
     text-align: center;
 
     color: #fff;
@@ -356,7 +358,7 @@ header h1
 {
     font-size: 8pt;
 
-    padding: 5pt;
+    padding: 8pt 5pt;
 
     color: #3b3b3b;
     border-top: 1px solid #e3e3e3;

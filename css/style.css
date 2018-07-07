@@ -105,9 +105,12 @@ body
     font-size: 1.6em;
     line-height: 1;
 
+    position: relative;
+
     overflow-x: hidden;
 
     width: 100%;
+    height: 100vh;
 
     word-wrap: break-word;
 

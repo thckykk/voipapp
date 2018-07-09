@@ -691,3 +691,86 @@ footer ul li a p span
 {
     background-color: #fd5c63;
 }
+
+#call
+{
+    position: relative;
+
+    height: calc( 100vh - 240pt);
+    margin-top: 10pt;
+}
+
+#call .action,
+#call .hangup
+{
+    display: -moz-flex;
+    display:  -ms-flex;
+    display:   -o-flex;
+    display:      flex;
+    display: -ms-flexbox;
+    /*IE10*/
+
+    justify-content: center;
+    -ms-flex-pack: center;
+    /*--- IE10 ---*/
+}
+
+#call .action div,
+#call .hangup div
+{
+    display: -moz-flex;
+    display:  -ms-flex;
+    display:   -o-flex;
+    display:      flex;
+    display: -ms-flexbox;
+
+    box-sizing: border-box;
+    width: 65pt;
+    /*--- IE10 ---*/
+    height: 65pt;
+
+    border: 1pt solid #e3e3e3;
+    border-radius: 100%;
+    /*IE10*/
+
+    justify-content: center;
+    -ms-flex-pack: center;
+    /*--- IE10 ---*/
+    align-items: center;
+    -ms-flex-align: center;
+}
+
+#call .action div:not(:first-child),
+#call .hangup div:not(:first-child)
+{
+    margin-left: 15pt;
+}
+
+#call .action div i,
+#call .hangup div i
+{
+    font-size: 25pt;
+
+    color: #caccd1;
+}
+
+#call .hangup
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin: 0 auto;
+}
+
+#call .hangup div
+{
+    border: none;
+    background-color: #f00;
+}
+
+#call .hangup div i
+{
+    color: #fff;
+}
